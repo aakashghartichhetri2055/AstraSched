@@ -48,7 +48,7 @@ AstraSched aims to:
 ## Simulator Architecture 
 The simulator uses a modular architecture designed for controlled experimentation.
 Core components:
- Component	           Responsibility
+*Component	           Responsibility
  - Job Generator	     : Creates workloads from multiple users
  - Cluster Model	     : Tracks GPU availability and running jobs
  - Scheduler	         : Selects jobs for execution
@@ -71,7 +71,7 @@ This mechanism discourages extreme priority inflation and improves fairness
 
 ## Metrics
 Experiments evaluate system performance using the following metrics.
- Metric	                Description
+*Metric	                Description
  - Average Waiting      : Time	Time between job submission and execution
  - GPU Utilization	     : Percentage of time GPUs are active
  - Fairness Index	      : Distribution of resource allocation among users
@@ -97,9 +97,9 @@ Evaluate how manipulation affects scheduling outcomes.
 Cluster Scaling
 Test scheduler performance under different resource availability.
 Example configurations:
-      -  GPUs = 4
-      -  GPUs = 8
-      -  GPUs = 32
+ - GPUs = 4
+ - GPUs = 8
+ - GPUs = 32
 This shows how policies behave as system scale increases.
 
 ## How to Run
