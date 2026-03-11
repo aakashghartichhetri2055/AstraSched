@@ -32,19 +32,19 @@ The system runs controlled experiments to analyze fairness and efficiency in res
 ## Research Motivation
 Modern ML workloads rely heavily on shared GPU clusters.
 In many systems:
-* - GPUs are scarce
-* - users compete for resources
-* - priority is self-reported
+ - GPUs are scarce
+ - users compete for resources
+ - priority is self-reported
 This creates a strategic environment where users may inflate job importance to obtain faster scheduling.
 AstraSched explores how mechanism design and game theory can improve scheduling decisions in such environments.
 
 ## Project Goals
 AstraSched aims to:
-* - simulate a shared GPU cluster environment
-* - model truthful and strategic user behavior
-* - implement baseline and incentive-aware schedulers
-* - evaluate fairness and efficiency of allocation policies
-* - demonstrate how mechanism design impacts system performance
+ - simulate a shared GPU cluster environment
+ - model truthful and strategic user behavior
+ - implement baseline and incentive-aware schedulers
+ - evaluate fairness and efficiency of allocation policies
+ - demonstrate how mechanism design impacts system performance
 
 ## Simulator Architecture 
 The simulator uses a modular architecture designed for controlled experimentation.
