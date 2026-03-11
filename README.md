@@ -97,9 +97,9 @@ Evaluate how manipulation affects scheduling outcomes.
 Cluster Scaling
 Test scheduler performance under different resource availability.
 Example configurations:
-      GPUs = 4
-      GPUs = 8
-      GPUs = 32
+      * GPUs = 4
+      * GPUs = 8
+      * GPUs = 32
 This shows how policies behave as system scale increases.
 
 ## How to Run
