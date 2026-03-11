@@ -16,7 +16,6 @@ fairness
 - [Scheduling Policies](#scheduling_policies)
 - [Matrics](#matrics)
 - [Experiment Design](#experiment_design)
-- [Folder Structure](#folder_structure)
 - [How to Run](#how_to_run)
 - [Sample Results](#sample_results)
 - [Future Work](#future_work)
@@ -25,8 +24,8 @@ fairness
 ## Overview 
 AstraSched models a shared GPU cluster where multiple users submit jobs competing for limited resources.
 The simulator evaluates how scheduling policies perform when users:
-* - report job priorities truthfully
-* - exaggerate job urgency strategically
+ - report job priorities truthfully
+ - exaggerate job urgency strategically
 The system runs controlled experiments to analyze fairness and efficiency in resource allocation.
 
 ## Research Motivation
@@ -132,12 +131,12 @@ The structure separates:
   - metrics
   - experiment outputs
 
-How to Run
-Install dependencies:
+## How to Run
+- Install dependencies:
     pip install -r requirements.txt
-Run experiments:
+- Run experiments:
     python run_experiments.py
-Generated outputs appear in:
+- Generated outputs appear in:
     results/plots
 
 ## Sample Results
