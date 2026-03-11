@@ -52,8 +52,8 @@ Core components:
  - Job Generator	     : Creates workloads from multiple users
  - Cluster Model	     : Tracks GPU availability and running jobs
  - Scheduler	         : Selects jobs for execution
- - Mechanism Module	   : Implements incentive-aware allocation
- - Metrics Engine	     : Computes system performance metrics
+ - Mechanism Module	  : Implements incentive-aware allocation
+ - Metrics Engine	    : Computes system performance metrics
  - Visualization	     : Generates experiment plots
 
 ## Scheduling Policies
@@ -71,9 +71,9 @@ This mechanism discourages extreme priority inflation and improves fairness
 
 ## Metrics
 Experiments evaluate system performance using the following metrics.
- Metric	        Description
+ Metric	                Description
  - Average Waiting      : Time	Time between job submission and execution
- - GPU Utilization	    : Percentage of time GPUs are active
+ - GPU Utilization	     : Percentage of time GPUs are active
  - Fairness Index	      : Distribution of resource allocation among users
  - Social Welfare	      : Total value of completed jobs
 These metrics capture both efficiency and fairness.
@@ -101,35 +101,6 @@ Example configurations:
       GPUs = 8
       GPUs = 32
 This shows how policies behave as system scale increases.
-
-## Folder Structure
-astra_sched/
-│
-├── config/
-│   └── default_config.py
-│
-├── simulator/
-│   ├── models.py
-│   ├── scheduler.py
-│   ├── mechanism.py
-│   ├── engine.py
-│   ├── metrics.py
-│   └── visualization.py
-│
-├── results/
-│   ├── plots/
-│   └── tables/
-│
-├── docs/
-│
-├── run_experiments.py
-└── README.md
-The structure separates:
-  - configuration
-  - simulation engine
-  - scheduling logic
-  - metrics
-  - experiment outputs
 
 ## How to Run
 - Install dependencies:
